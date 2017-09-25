@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1546D971F79566200DBADF7 /* NewPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1546D961F79566200DBADF7 /* NewPersonViewController.m */; };
+		D156EDB01F732FBA00AC7251 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D156EDAF1F732FBA00AC7251 /* main.m */; };
+		D156EDB31F732FBA00AC7251 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D156EDB21F732FBA00AC7251 /* AppDelegate.m */; };
+		D156EDB61F732FBA00AC7251 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = D156EDB51F732FBA00AC7251 /* Home.m */; };
+		D156EDB91F732FBA00AC7251 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D156EDB71F732FBA00AC7251 /* Main.storyboard */; };
+		D156EDBC1F732FBA00AC7251 /* Mi_Primera_Tabla.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D156EDBA1F732FBA00AC7251 /* Mi_Primera_Tabla.xcdatamodeld */; };
+		D156EDBE1F732FBA00AC7251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D156EDBD1F732FBA00AC7251 /* Assets.xcassets */; };
+		D156EDC11F732FBA00AC7251 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D156EDBF1F732FBA00AC7251 /* LaunchScreen.storyboard */; };
+		D19AFA011F7336C000D53E56 /* cellMainTable.m in Sources */ = {isa = PBXBuildFile; fileRef = D19AF9FF1F7336C000D53E56 /* cellMainTable.m */; };
+		D19AFA021F7336C000D53E56 /* cellMainTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = D19AFA001F7336C000D53E56 /* cellMainTable.xib */; };
+		D19AFA1F1F734CFF00D53E56 /* arya.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D19AFA1A1F734CFF00D53E56 /* arya.jpg */; };
+		D19AFA201F734CFF00D53E56 /* cersei.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D19AFA1B1F734CFF00D53E56 /* cersei.jpg */; };
+		D19AFA211F734CFF00D53E56 /* daenerys.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D19AFA1C1F734CFF00D53E56 /* daenerys.jpeg */; };
+		D19AFA221F734CFF00D53E56 /* jon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D19AFA1D1F734CFF00D53E56 /* jon.jpg */; };
+		D19AFA231F734CFF00D53E56 /* tyrion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D19AFA1E1F734CFF00D53E56 /* tyrion.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A1546D951F79566200DBADF7 /* NewPersonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NewPersonViewController.h; path = Controllers/NewPersonViewController.h; sourceTree = "<group>"; };
+		A1546D961F79566200DBADF7 /* NewPersonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NewPersonViewController.m; path = Controllers/NewPersonViewController.m; sourceTree = "<group>"; };
+		D156EDAB1F732FBA00AC7251 /* Mi Primera Tabla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mi Primera Tabla.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D156EDAF1F732FBA00AC7251 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D156EDB11F732FBA00AC7251 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D156EDB21F732FBA00AC7251 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D156EDB41F732FBA00AC7251 /* Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
+		D156EDB51F732FBA00AC7251 /* Home.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
+		D156EDB81F732FBA00AC7251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D156EDBB1F732FBA00AC7251 /* Mi_Primera_Tabla.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mi_Primera_Tabla.xcdatamodel; sourceTree = "<group>"; };
+		D156EDBD1F732FBA00AC7251 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D156EDC01F732FBA00AC7251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D156EDC21F732FBA00AC7251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D19AF9FE1F7336C000D53E56 /* cellMainTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellMainTable.h; sourceTree = "<group>"; };
+		D19AF9FF1F7336C000D53E56 /* cellMainTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellMainTable.m; sourceTree = "<group>"; };
+		D19AFA001F7336C000D53E56 /* cellMainTable.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cellMainTable.xib; sourceTree = "<group>"; };
+		D19AFA1A1F734CFF00D53E56 /* arya.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arya.jpg; sourceTree = "<group>"; };
+		D19AFA1B1F734CFF00D53E56 /* cersei.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cersei.jpg; sourceTree = "<group>"; };
+		D19AFA1C1F734CFF00D53E56 /* daenerys.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = daenerys.jpeg; sourceTree = "<group>"; };
+		D19AFA1D1F734CFF00D53E56 /* jon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jon.jpg; sourceTree = "<group>"; };
+		D19AFA1E1F734CFF00D53E56 /* tyrion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tyrion.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D156EDA81F732FBA00AC7251 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D156EDA21F732FBA00AC7251 = {
+			isa = PBXGroup;
+			children = (
+				D156EDAD1F732FBA00AC7251 /* Mi Primera Tabla */,
+				D156EDAC1F732FBA00AC7251 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D156EDAC1F732FBA00AC7251 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D156EDAB1F732FBA00AC7251 /* Mi Primera Tabla.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D156EDAD1F732FBA00AC7251 /* Mi Primera Tabla */ = {
+			isa = PBXGroup;
+			children = (
+				D19AFA191F734CFF00D53E56 /* imgs */,
+				D156EDC81F732FCA00AC7251 /* Main */,
+				D156EDC91F732FD500AC7251 /* Controllers */,
+				D19AF9FD1F73360A00D53E56 /* Cells */,
+				D156EDB71F732FBA00AC7251 /* Main.storyboard */,
+				D156EDBD1F732FBA00AC7251 /* Assets.xcassets */,
+				D156EDBF1F732FBA00AC7251 /* LaunchScreen.storyboard */,
+				D156EDC21F732FBA00AC7251 /* Info.plist */,
+				D156EDBA1F732FBA00AC7251 /* Mi_Primera_Tabla.xcdatamodeld */,
+				D156EDAE1F732FBA00AC7251 /* Supporting Files */,
+			);
+			path = "Mi Primera Tabla";
+			sourceTree = "<group>";
+		};
+		D156EDAE1F732FBA00AC7251 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D156EDAF1F732FBA00AC7251 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D156EDC81F732FCA00AC7251 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D156EDB11F732FBA00AC7251 /* AppDelegate.h */,
+				D156EDB21F732FBA00AC7251 /* AppDelegate.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		D156EDC91F732FD500AC7251 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D156EDB41F732FBA00AC7251 /* Home.h */,
+				D156EDB51F732FBA00AC7251 /* Home.m */,
+				A1546D951F79566200DBADF7 /* NewPersonViewController.h */,
+				A1546D961F79566200DBADF7 /* NewPersonViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D19AF9FD1F73360A00D53E56 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D19AF9FE1F7336C000D53E56 /* cellMainTable.h */,
+				D19AF9FF1F7336C000D53E56 /* cellMainTable.m */,
+				D19AFA001F7336C000D53E56 /* cellMainTable.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		D19AFA191F734CFF00D53E56 /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+				D19AFA1A1F734CFF00D53E56 /* arya.jpg */,
+				D19AFA1B1F734CFF00D53E56 /* cersei.jpg */,
+				D19AFA1C1F734CFF00D53E56 /* daenerys.jpeg */,
+				D19AFA1D1F734CFF00D53E56 /* jon.jpg */,
+				D19AFA1E1F734CFF00D53E56 /* tyrion.jpg */,
+			);
+			path = imgs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D156EDAA1F732FBA00AC7251 /* Mi Primera Tabla */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D156EDC51F732FBA00AC7251 /* Build configuration list for PBXNativeTarget "Mi Primera Tabla" */;
+			buildPhases = (
+				D156EDA71F732FBA00AC7251 /* Sources */,
+				D156EDA81F732FBA00AC7251 /* Frameworks */,
+				D156EDA91F732FBA00AC7251 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mi Primera Tabla";
+			productName = "Mi Primera Tabla";
+			productReference = D156EDAB1F732FBA00AC7251 /* Mi Primera Tabla.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D156EDA31F732FBA00AC7251 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = wgdomenzain;
+				TargetAttributes = {
+					D156EDAA1F732FBA00AC7251 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D156EDA61F732FBA00AC7251 /* Build configuration list for PBXProject "Mi Primera Tabla" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D156EDA21F732FBA00AC7251;
+			productRefGroup = D156EDAC1F732FBA00AC7251 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D156EDAA1F732FBA00AC7251 /* Mi Primera Tabla */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D156EDA91F732FBA00AC7251 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D19AFA201F734CFF00D53E56 /* cersei.jpg in Resources */,
+				D156EDC11F732FBA00AC7251 /* LaunchScreen.storyboard in Resources */,
+				D19AFA1F1F734CFF00D53E56 /* arya.jpg in Resources */,
+				D19AFA211F734CFF00D53E56 /* daenerys.jpeg in Resources */,
+				D156EDBE1F732FBA00AC7251 /* Assets.xcassets in Resources */,
+				D19AFA221F734CFF00D53E56 /* jon.jpg in Resources */,
+				D156EDB91F732FBA00AC7251 /* Main.storyboard in Resources */,
+				D19AFA021F7336C000D53E56 /* cellMainTable.xib in Resources */,
+				D19AFA231F734CFF00D53E56 /* tyrion.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D156EDA71F732FBA00AC7251 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D156EDB61F732FBA00AC7251 /* Home.m in Sources */,
+				D156EDBC1F732FBA00AC7251 /* Mi_Primera_Tabla.xcdatamodeld in Sources */,
+				D156EDB31F732FBA00AC7251 /* AppDelegate.m in Sources */,
+				D19AFA011F7336C000D53E56 /* cellMainTable.m in Sources */,
+				D156EDB01F732FBA00AC7251 /* main.m in Sources */,
+				A1546D971F79566200DBADF7 /* NewPersonViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D156EDB71F732FBA00AC7251 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D156EDB81F732FBA00AC7251 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D156EDBF1F732FBA00AC7251 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D156EDC01F732FBA00AC7251 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D156EDC31F732FBA00AC7251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D156EDC41F732FBA00AC7251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D156EDC61F732FBA00AC7251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Mi Primera Tabla/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wgdomenzain.Mi-Primera-Tabla";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D156EDC71F732FBA00AC7251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Mi Primera Tabla/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wgdomenzain.Mi-Primera-Tabla";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D156EDA61F732FBA00AC7251 /* Build configuration list for PBXProject "Mi Primera Tabla" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D156EDC31F732FBA00AC7251 /* Debug */,
+				D156EDC41F732FBA00AC7251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D156EDC51F732FBA00AC7251 /* Build configuration list for PBXNativeTarget "Mi Primera Tabla" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D156EDC61F732FBA00AC7251 /* Debug */,
+				D156EDC71F732FBA00AC7251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D156EDBA1F732FBA00AC7251 /* Mi_Primera_Tabla.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D156EDBB1F732FBA00AC7251 /* Mi_Primera_Tabla.xcdatamodel */,
+			);
+			currentVersion = D156EDBB1F732FBA00AC7251 /* Mi_Primera_Tabla.xcdatamodel */;
+			path = Mi_Primera_Tabla.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D156EDA31F732FBA00AC7251 /* Project object */;
+}
