@@ -173,6 +173,7 @@
 				TargetAttributes = {
 					D156EDAA1F732FBA00AC7251 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 43L9G44D97;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -344,6 +345,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 43L9G44D97;
 				INFOPLIST_FILE = "Mi Primera Tabla/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wgdomenzain.Mi-Primera-Tabla";
@@ -355,6 +357,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 43L9G44D97;
 				INFOPLIST_FILE = "Mi Primera Tabla/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wgdomenzain.Mi-Primera-Tabla";
