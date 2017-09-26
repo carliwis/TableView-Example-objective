@@ -93,10 +93,13 @@
                             <constraint firstItem="Fh0-he-Yx9" firstAttribute="top" secondItem="3Qd-RE-hXc" secondAttribute="bottom" id="zvL-q8-7jN"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Inicio" id="ftu-QH-3Lz"/>
+                    <navigationItem key="navigationItem" title="Inicio" id="ftu-QH-3Lz">
+                        <barButtonItem key="backBarButtonItem" title=" " id="236-eD-jLA"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tblMain" destination="3Qd-RE-hXc" id="eR7-1v-nwa"/>
                         <segue destination="exz-hm-Fju" kind="modal" identifier="toAddNewPerson" modalPresentationStyle="currentContext" id="15E-vz-wWm"/>
+                        <segue destination="QtF-Ca-Lx9" kind="push" identifier="toShowDetail" id="bAh-ru-nN2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -201,6 +204,50 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1128" y="125"/>
+        </scene>
+        <!--Detalle-->
+        <scene sceneID="d3G-en-pYC">
+            <objects>
+                <viewController id="QtF-Ca-Lx9" customClass="DetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rjm-PJ-2rL"/>
+                        <viewControllerLayoutGuide type="bottom" id="MQH-Uf-plo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="E8U-43-uAP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iBe-Dd-Nbk">
+                                <rect key="frame" x="67" y="61" width="240" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WjD-rD-nnj" userLabel="name">
+                                <rect key="frame" x="16" y="302" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KiA-Dk-DMg">
+                                <rect key="frame" x="16" y="331" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Detalle" id="wUT-n3-Fxr"/>
+                    <connections>
+                        <outlet property="imgPerson" destination="iBe-Dd-Nbk" id="NsL-UK-Mru"/>
+                        <outlet property="lblDescription" destination="KiA-Dk-DMg" id="sac-cz-jf0"/>
+                        <outlet property="lblName" destination="WjD-rD-nnj" id="XcR-mX-qJ3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kvP-17-c5Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="549.5" y="-625.5"/>
         </scene>
     </scenes>
     <resources>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A1546D971F79566200DBADF7 /* NewPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1546D961F79566200DBADF7 /* NewPersonViewController.m */; };
+		A1C58EF31F7AA487005DFED6 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C58EF21F7AA487005DFED6 /* DetailViewController.m */; };
 		D156EDB01F732FBA00AC7251 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D156EDAF1F732FBA00AC7251 /* main.m */; };
 		D156EDB31F732FBA00AC7251 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D156EDB21F732FBA00AC7251 /* AppDelegate.m */; };
 		D156EDB61F732FBA00AC7251 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = D156EDB51F732FBA00AC7251 /* Home.m */; };
@@ -27,6 +28,8 @@
 /* Begin PBXFileReference section */
 		A1546D951F79566200DBADF7 /* NewPersonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NewPersonViewController.h; path = Controllers/NewPersonViewController.h; sourceTree = "<group>"; };
 		A1546D961F79566200DBADF7 /* NewPersonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NewPersonViewController.m; path = Controllers/NewPersonViewController.m; sourceTree = "<group>"; };
+		A1C58EF11F7AA487005DFED6 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = Controllers/Detail/DetailViewController.h; sourceTree = "<group>"; };
+		A1C58EF21F7AA487005DFED6 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = Controllers/Detail/DetailViewController.m; sourceTree = "<group>"; };
 		D156EDAB1F732FBA00AC7251 /* Mi Primera Tabla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mi Primera Tabla.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D156EDAF1F732FBA00AC7251 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D156EDB11F732FBA00AC7251 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,6 +62,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A1C58EF01F7AA45F005DFED6 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				A1C58EF11F7AA487005DFED6 /* DetailViewController.h */,
+				A1C58EF21F7AA487005DFED6 /* DetailViewController.m */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
 		D156EDA21F732FBA00AC7251 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +124,7 @@
 		D156EDC91F732FD500AC7251 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A1C58EF01F7AA45F005DFED6 /* Detail */,
 				D156EDB41F732FBA00AC7251 /* Home.h */,
 				D156EDB51F732FBA00AC7251 /* Home.m */,
 				A1546D951F79566200DBADF7 /* NewPersonViewController.h */,
@@ -226,6 +239,7 @@
 				D19AFA011F7336C000D53E56 /* cellMainTable.m in Sources */,
 				D156EDB01F732FBA00AC7251 /* main.m in Sources */,
 				A1546D971F79566200DBADF7 /* NewPersonViewController.m in Sources */,
+				A1C58EF31F7AA487005DFED6 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

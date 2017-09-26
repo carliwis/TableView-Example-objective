@@ -9,11 +9,10 @@
 #import "Home.h"
 #import "cellMainTable.h"
 #import "NewPersonViewController.h"
+#import "DetailViewController.h"
 
 @interface Home () <NewPersonDelegate>
-@property NSMutableArray *userNames;
-@property NSMutableArray *userAges;
-@property NSMutableArray *userImages;
+@property NSMutableArray *personData;
 @end
 
 @implementation Home
@@ -33,11 +32,37 @@
 
 //-------------------------------------------------------------------------------
 - (void)initController {
-    self.userNames  = [[NSMutableArray alloc] initWithObjects: @"Tyrion Lannister", @"Daenerys Targaryen", @"Jon Snow", @"Arya Stark", @"Cersei Lannister", nil];
-    
-    self.userAges  = [[NSMutableArray alloc] initWithObjects: @"38 años", @"22 años", @"25 años", @"16 años", @"42 años", nil];
-
-    self.userImages = [[NSMutableArray alloc] initWithObjects: [UIImage imageNamed:@"tyrion.jpg"], [UIImage imageNamed:@"daenerys.jpeg"], [UIImage imageNamed:@"jon.jpg"], [UIImage imageNamed:@"arya.jpg"], [UIImage imageNamed:@"cersei.jpg"], nil];
+    self.personData = [[NSMutableArray alloc]init];
+    [self.personData addObject:@{
+                                 @"name" :  @"Tyrion Lannister",
+                                 @"age" : @"38 años",
+                                 @"image" :  [UIImage imageNamed:@"tyrion.jpg"],
+                                 @"description": @""
+                                 }];
+    [self.personData addObject: @{
+                                  @"name" :  @"Daenerys Targaryen",
+                                  @"age" : @"22 años",
+                                  @"image" :  [UIImage imageNamed:@"daenerys.jpeg"],
+                                  @"description": @""
+                                  }];
+    [self.personData addObject: @{
+                                  @"name" :  @"Jon Snow",
+                                  @"age" : @"25 años",
+                                  @"image" :  [UIImage imageNamed:@"jon.jpg"],
+                                  @"description": @""
+                                  }];
+    [self.personData addObject: @{
+                                  @"name" :  @"Arya Stark",
+                                  @"age" : @"16 años",
+                                  @"image" :  [UIImage imageNamed:@"arya.jpg"],
+                                  @"description": @""
+                                  }];
+    [self.personData addObject:@{
+                                 @"name" :  @"Cersei Lannister",
+                                 @"age" : @"42 años",
+                                 @"image" :  [UIImage imageNamed:@"cersei.jpg"],
+                                 @"description": @""
+                                 }];
 }
 
 /**********************************************************************************************/
@@ -48,7 +73,7 @@
 }
 //-------------------------------------------------------------------------------
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.userNames.count;
+    return self.personData.count;
 }
 //-------------------------------------------------------------------------------
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -63,16 +88,19 @@
         [tableView registerNib:[UINib nibWithNibName:@"cellMainTable" bundle:nil] forCellReuseIdentifier:@"cellMainTable"];
         cell = [tableView dequeueReusableCellWithIdentifier:@"cellMainTable"];
     }
+    NSDictionary *current = self.personData[indexPath.row];
     //Fill cell with info from arrays
-    cell.lblName.text       = self.userNames[indexPath.row];
-    cell.lblAge.text        = self.userAges[indexPath.row];
-    cell.imgUser.image      = self.userImages[indexPath.row];
+    cell.lblName.text       =  current[@"name"];
+    cell.lblAge.text        =  current[@"age"];
+    cell.imgUser.image      =  current[@"image"];
     
     return cell;
 }
 //-------------------------------------------------------------------------------
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    //Pending
+    [self.tblMain deselectRowAtIndexPath:indexPath animated:YES];
+    NSDictionary *current = self.personData[indexPath.row];
+    [self performSegueWithIdentifier:@"toShowDetail" sender:current];
 }
 /**********************************************************************************************/
 #pragma mark - Action methods
@@ -91,9 +119,12 @@
 
 - (void)didAddPersonName:(NSString *)name andImageSelected:(UIImage *)image {
     NSLog(@"%@",name);
-    [self.userNames addObject:name];
-    [self.userAges addObject:@""];
-    [self.userImages addObject:image];
+    [self.personData addObject:@{
+                                 @"name" :  name,
+                                 @"age" : @"",
+                                 @"imaage" :  image,
+                                 @"description": @""
+                                 }];
     [self.tblMain reloadData];
 }
 
@@ -104,6 +135,9 @@
         UINavigationController *navigationController = [segue destinationViewController];
         NewPersonViewController *personVC = [[navigationController viewControllers]firstObject];
         personVC.delegate = self;
+    } else if ([segue.identifier isEqualToString:@"toShowDetail"]) {
+        DetailViewController *detailVC = [segue destinationViewController];
+        detailVC.person = sender;
     }
 }
 
