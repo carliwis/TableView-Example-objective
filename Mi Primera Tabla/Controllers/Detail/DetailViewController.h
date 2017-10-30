@@ -2,7 +2,7 @@
 //  DetailViewController.h
 //  Mi Primera Tabla
 //
-//  Created by Carlos Osuna on 9/26/17.
+//  Created by Amalia Gatelum on 9/26/17.
 //  Copyright © 2017 wgdomenzain. All rights reserved.
 //
 

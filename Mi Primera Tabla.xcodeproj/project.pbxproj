@@ -8,7 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		A1546D971F79566200DBADF7 /* NewPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1546D961F79566200DBADF7 /* NewPersonViewController.m */; };
+		A160A0421FA6CC9000396962 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A160A0411FA6CC9000396962 /* LoginViewController.m */; };
+		A160A0461FA6E56900396962 /* BuyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A160A0451FA6E56900396962 /* BuyViewController.m */; };
+		A1B165281FA77E720010ABA6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1B165271FA77E700010ABA6 /* GoogleService-Info.plist */; };
 		A1C58EF31F7AA487005DFED6 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C58EF21F7AA487005DFED6 /* DetailViewController.m */; };
+		BE71AC25844C45258672C5A8 /* libPods-Mi Primera Tabla.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54764686936F829D1675090C /* libPods-Mi Primera Tabla.a */; };
 		D156EDB01F732FBA00AC7251 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D156EDAF1F732FBA00AC7251 /* main.m */; };
 		D156EDB31F732FBA00AC7251 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D156EDB21F732FBA00AC7251 /* AppDelegate.m */; };
 		D156EDB61F732FBA00AC7251 /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = D156EDB51F732FBA00AC7251 /* Home.m */; };
@@ -26,10 +30,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		54764686936F829D1675090C /* libPods-Mi Primera Tabla.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mi Primera Tabla.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1546D951F79566200DBADF7 /* NewPersonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = NewPersonViewController.h; path = Controllers/NewPersonViewController.h; sourceTree = "<group>"; };
 		A1546D961F79566200DBADF7 /* NewPersonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = NewPersonViewController.m; path = Controllers/NewPersonViewController.m; sourceTree = "<group>"; };
+		A160A0401FA6CC9000396962 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = Controllers/LoginViewController.h; sourceTree = "<group>"; };
+		A160A0411FA6CC9000396962 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = Controllers/LoginViewController.m; sourceTree = "<group>"; };
+		A160A0441FA6E56900396962 /* BuyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BuyViewController.h; path = Controllers/Buy/BuyViewController.h; sourceTree = "<group>"; };
+		A160A0451FA6E56900396962 /* BuyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BuyViewController.m; path = Controllers/Buy/BuyViewController.m; sourceTree = "<group>"; };
+		A1B165271FA77E700010ABA6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		A1C58EF11F7AA487005DFED6 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = Controllers/Detail/DetailViewController.h; sourceTree = "<group>"; };
 		A1C58EF21F7AA487005DFED6 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = Controllers/Detail/DetailViewController.m; sourceTree = "<group>"; };
+		A7F3CF5CB8CDEA01FE31C14F /* Pods-Mi Primera Tabla.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mi Primera Tabla.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mi Primera Tabla/Pods-Mi Primera Tabla.release.xcconfig"; sourceTree = "<group>"; };
 		D156EDAB1F732FBA00AC7251 /* Mi Primera Tabla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mi Primera Tabla.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D156EDAF1F732FBA00AC7251 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D156EDB11F732FBA00AC7251 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -49,6 +60,7 @@
 		D19AFA1C1F734CFF00D53E56 /* daenerys.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = daenerys.jpeg; sourceTree = "<group>"; };
 		D19AFA1D1F734CFF00D53E56 /* jon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jon.jpg; sourceTree = "<group>"; };
 		D19AFA1E1F734CFF00D53E56 /* tyrion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tyrion.jpg; sourceTree = "<group>"; };
+		FC1417C71FC2574181F2864B /* Pods-Mi Primera Tabla.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mi Primera Tabla.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mi Primera Tabla/Pods-Mi Primera Tabla.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +68,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE71AC25844C45258672C5A8 /* libPods-Mi Primera Tabla.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7141A1A88A604BE308BE6513 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC1417C71FC2574181F2864B /* Pods-Mi Primera Tabla.debug.xcconfig */,
+				A7F3CF5CB8CDEA01FE31C14F /* Pods-Mi Primera Tabla.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A160A0431FA6E55200396962 /* Buy */ = {
+			isa = PBXGroup;
+			children = (
+				A160A0441FA6E56900396962 /* BuyViewController.h */,
+				A160A0451FA6E56900396962 /* BuyViewController.m */,
+			);
+			name = Buy;
+			sourceTree = "<group>";
+		};
 		A1C58EF01F7AA45F005DFED6 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +107,8 @@
 			children = (
 				D156EDAD1F732FBA00AC7251 /* Mi Primera Tabla */,
 				D156EDAC1F732FBA00AC7251 /* Products */,
+				7141A1A88A604BE308BE6513 /* Pods */,
+				D562EBBEC9E02BD41FAD061C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +123,7 @@
 		D156EDAD1F732FBA00AC7251 /* Mi Primera Tabla */ = {
 			isa = PBXGroup;
 			children = (
+				A1B165271FA77E700010ABA6 /* GoogleService-Info.plist */,
 				D19AFA191F734CFF00D53E56 /* imgs */,
 				D156EDC81F732FCA00AC7251 /* Main */,
 				D156EDC91F732FD500AC7251 /* Controllers */,
@@ -124,11 +158,14 @@
 		D156EDC91F732FD500AC7251 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A160A0431FA6E55200396962 /* Buy */,
 				A1C58EF01F7AA45F005DFED6 /* Detail */,
 				D156EDB41F732FBA00AC7251 /* Home.h */,
 				D156EDB51F732FBA00AC7251 /* Home.m */,
 				A1546D951F79566200DBADF7 /* NewPersonViewController.h */,
 				A1546D961F79566200DBADF7 /* NewPersonViewController.m */,
+				A160A0401FA6CC9000396962 /* LoginViewController.h */,
+				A160A0411FA6CC9000396962 /* LoginViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -155,6 +192,14 @@
 			path = imgs;
 			sourceTree = "<group>";
 		};
+		D562EBBEC9E02BD41FAD061C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54764686936F829D1675090C /* libPods-Mi Primera Tabla.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,9 +207,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D156EDC51F732FBA00AC7251 /* Build configuration list for PBXNativeTarget "Mi Primera Tabla" */;
 			buildPhases = (
+				8F6544CEA31C10BEF15154CE /* [CP] Check Pods Manifest.lock */,
 				D156EDA71F732FBA00AC7251 /* Sources */,
 				D156EDA81F732FBA00AC7251 /* Frameworks */,
 				D156EDA91F732FBA00AC7251 /* Resources */,
+				FA7E8D5208AD52E93D3F09EF /* [CP] Embed Pods Frameworks */,
+				4CFA5D211255F8D00A5BC16A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -221,6 +269,7 @@
 				D156EDBE1F732FBA00AC7251 /* Assets.xcassets in Resources */,
 				D19AFA221F734CFF00D53E56 /* jon.jpg in Resources */,
 				D156EDB91F732FBA00AC7251 /* Main.storyboard in Resources */,
+				A1B165281FA77E720010ABA6 /* GoogleService-Info.plist in Resources */,
 				D19AFA021F7336C000D53E56 /* cellMainTable.xib in Resources */,
 				D19AFA231F734CFF00D53E56 /* tyrion.jpg in Resources */,
 			);
@@ -228,15 +277,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4CFA5D211255F8D00A5BC16A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Mi Primera Tabla/Pods-Mi Primera Tabla-resources.sh",
+				"${PODS_ROOT}/GTMOAuth2/Source/Touch/GTMOAuth2ViewTouch.xib",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mi Primera Tabla/Pods-Mi Primera Tabla-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F6544CEA31C10BEF15154CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mi Primera Tabla-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA7E8D5208AD52E93D3F09EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mi Primera Tabla/Pods-Mi Primera Tabla-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D156EDA71F732FBA00AC7251 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A160A0421FA6CC9000396962 /* LoginViewController.m in Sources */,
 				D156EDB61F732FBA00AC7251 /* Home.m in Sources */,
 				D156EDBC1F732FBA00AC7251 /* Mi_Primera_Tabla.xcdatamodeld in Sources */,
 				D156EDB31F732FBA00AC7251 /* AppDelegate.m in Sources */,
 				D19AFA011F7336C000D53E56 /* cellMainTable.m in Sources */,
+				A160A0461FA6E56900396962 /* BuyViewController.m in Sources */,
 				D156EDB01F732FBA00AC7251 /* main.m in Sources */,
 				A1546D971F79566200DBADF7 /* NewPersonViewController.m in Sources */,
 				A1C58EF31F7AA487005DFED6 /* DetailViewController.m in Sources */,
@@ -357,24 +463,28 @@
 		};
 		D156EDC61F732FBA00AC7251 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC1417C71FC2574181F2864B /* Pods-Mi Primera Tabla.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 43L9G44D97;
 				INFOPLIST_FILE = "Mi Primera Tabla/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wgdomenzain.Mi-Primera-Tabla";
+				PRODUCT_BUNDLE_IDENTIFIER = "mx.com.pegasus.My-Analitycs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		D156EDC71F732FBA00AC7251 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7F3CF5CB8CDEA01FE31C14F /* Pods-Mi Primera Tabla.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 43L9G44D97;
 				INFOPLIST_FILE = "Mi Primera Tabla/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.wgdomenzain.Mi-Primera-Tabla";
+				PRODUCT_BUNDLE_IDENTIFIER = "mx.com.pegasus.My-Analitycs";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

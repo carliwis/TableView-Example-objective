@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+@import Firebase;
 
 @interface AppDelegate ()
 
@@ -16,7 +17,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [FIRApp configure];
     return YES;
 }
 
@@ -49,6 +50,13 @@
     [self saveContext];
 }
 
+- (BOOL)application:(UIApplication *)app
+            openURL:(NSURL *)url
+            options:(NSDictionary *)options {
+    return [[GIDSignIn sharedInstance] handleURL:url
+                               sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]
+                                      annotation:options[UIApplicationOpenURLOptionsAnnotationKey]];
+}
 
 #pragma mark - Core Data stack
 
@@ -94,5 +102,4 @@
         abort();
     }
 }
-
 @end

@@ -8,10 +8,9 @@
 
 #import "Home.h"
 #import "cellMainTable.h"
-#import "NewPersonViewController.h"
-#import "DetailViewController.h"
-
-@interface Home () <NewPersonDelegate>
+#import "BuyViewController.h"
+@import FirebaseAnalytics;
+@interface Home ()
 @property NSMutableArray *personData;
 @end
 
@@ -21,7 +20,9 @@
 /**********************************************************************************************/
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view, typically from a nib.
+    self.navigationItem.hidesBackButton = YES;
     [self initController];
 }
 //-------------------------------------------------------------------------------
@@ -30,37 +31,45 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [FIRAnalytics logEventWithName:@"pantalla_listado_productos"
+                        parameters:@{
+                                     @"name": @"pantalla_listado_productos",
+                                     @"full_text": @"pantalla_listado_productos"
+                                     }];
+}
 //-------------------------------------------------------------------------------
 - (void)initController {
     self.personData = [[NSMutableArray alloc]init];
     [self.personData addObject:@{
-                                 @"name" :  @"Tyrion Lannister",
-                                 @"age" : @"38 años",
-                                 @"image" :  [UIImage imageNamed:@"tyrion.jpg"],
+                                 @"name" :  @"Bundle VR Worlds para PS4",
+                                 @"price" : @"$13,299",
+                                 @"image" :  [UIImage imageNamed:@"product1"],
                                  @"description": @""
                                  }];
     [self.personData addObject: @{
-                                  @"name" :  @"Daenerys Targaryen",
-                                  @"age" : @"22 años",
-                                  @"image" :  [UIImage imageNamed:@"daenerys.jpeg"],
+                                  @"name" :  @"Tenis Puma Escaper Pro",
+                                  @"price" : @"$799",
+                                  @"image" :  [UIImage imageNamed:@"product2"],
                                   @"description": @""
                                   }];
     [self.personData addObject: @{
-                                  @"name" :  @"Jon Snow",
-                                  @"age" : @"25 años",
-                                  @"image" :  [UIImage imageNamed:@"jon.jpg"],
+                                  @"name" :  @"Mameluco Monsters Inc. Estampado",
+                                  @"price" : @"$259",
+                                  @"image" :  [UIImage imageNamed:@"product3"],
                                   @"description": @""
                                   }];
     [self.personData addObject: @{
-                                  @"name" :  @"Arya Stark",
-                                  @"age" : @"16 años",
-                                  @"image" :  [UIImage imageNamed:@"arya.jpg"],
+                                  @"name" :  @"Botas Flexi Cafés",
+                                  @"price" : @"$849",
+                                  @"image" :  [UIImage imageNamed:@"product4"],
                                   @"description": @""
                                   }];
     [self.personData addObject:@{
-                                 @"name" :  @"Cersei Lannister",
-                                 @"age" : @"42 años",
-                                 @"image" :  [UIImage imageNamed:@"cersei.jpg"],
+                                 @"name" :  @"Botas Jeep Cafés",
+                                 @"price" : @"$649",
+                                 @"image" :  [UIImage imageNamed:@"product5"],
                                  @"description": @""
                                  }];
 }
@@ -91,7 +100,7 @@
     NSDictionary *current = self.personData[indexPath.row];
     //Fill cell with info from arrays
     cell.lblName.text       =  current[@"name"];
-    cell.lblAge.text        =  current[@"age"];
+    cell.lblAge.text        =  current[@"price"];
     cell.imgUser.image      =  current[@"image"];
     
     return cell;
@@ -100,44 +109,22 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self.tblMain deselectRowAtIndexPath:indexPath animated:YES];
     NSDictionary *current = self.personData[indexPath.row];
-    [self performSegueWithIdentifier:@"toShowDetail" sender:current];
-}
-/**********************************************************************************************/
-#pragma mark - Action methods
-/**********************************************************************************************/
-- (IBAction)btnAddPressed:(id)sender {
-    /**
-    [self.userNames addObject:@"Walter"];
-    [self.userAges addObject:@"37 años"];
-    [self.userImages addObject:@"jon.jpg"];
-    [self.tblMain reloadData];
-     */
-    [self performSegueWithIdentifier:@"toAddNewPerson" sender:nil];
+    [self performSegueWithIdentifier:@"toBuy" sender:current];
+    
+    [FIRAnalytics logEventWithName:@"accion_selecciona_producto"
+                        parameters:@{
+                                     @"name": @"accion_selecciona_producto",
+                                     @"full_text": [NSString stringWithFormat:@"producto: %@",current[@"name"]]
+                                     }];
 }
 
-#pragma mark - NewPersonDelegate
-
-- (void)didAddPersonName:(NSString *)name andImageSelected:(UIImage *)image {
-    NSLog(@"%@",name);
-    [self.personData addObject:@{
-                                 @"name" :  name,
-                                 @"age" : @"",
-                                 @"imaage" :  image,
-                                 @"description": @""
-                                 }];
-    [self.tblMain reloadData];
-}
 
 #pragma mark - Segue
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"toAddNewPerson"]) {
-        UINavigationController *navigationController = [segue destinationViewController];
-        NewPersonViewController *personVC = [[navigationController viewControllers]firstObject];
-        personVC.delegate = self;
-    } else if ([segue.identifier isEqualToString:@"toShowDetail"]) {
-        DetailViewController *detailVC = [segue destinationViewController];
-        detailVC.person = sender;
+ if ([segue.identifier isEqualToString:@"toBuy"]) {
+        BuyViewController *detailVC = [segue destinationViewController];
+        detailVC.product = sender;
     }
 }
 

@@ -2,7 +2,7 @@
 //  NewPersonViewController.m
 //  Mi Primera Tabla
 //
-//  Created by Carlos Osuna on 9/25/17.
+//  Created by Amalia Gatelum on 9/25/17.
 //  Copyright © 2017 wgdomenzain. All rights reserved.
 //
 
